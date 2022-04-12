@@ -31,6 +31,9 @@ namespace SportsORM.Controllers
         [HttpGet("level_1")]
         public IActionResult Level1()
         {
+            ViewBag.WomensLeagues = _context.Leagues
+                .Where(l => l.Sport.Contains("Women"))
+                .ToList();
             return View();
         }
 
