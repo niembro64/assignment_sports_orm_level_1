@@ -55,19 +55,32 @@ namespace SportsORM.Controllers
 
             ViewBag.BSports = _context.Leagues.ToList().Where(x => x.Sport[0] == 'B');
 
-    
+
             ViewBag.L1_9 = _context.Leagues
                 .Where(l => l.Name.Contains("Atlantic"))
                 .ToList();
-    
+
             ViewBag.L1_10 = _context.Teams
                 .Where(l => l.Location.Contains("Dallas"))
                 .ToList();
-    
+
             ViewBag.L1_11 = _context.Teams
                 .Where(l => l.TeamName.Contains("Raptors"))
                 .ToList();
 
+            ViewBag.L1_12 = _context.Teams
+                .Where(l => l.Location.Contains("City"))
+                .ToList();
+
+            ViewBag.L1_13 = _context.Teams.ToList().Where(x => x.TeamName[0] == 'T');
+
+            ViewBag.L1_14 = _context.Teams.OrderBy(Y => Y.Location).ToList();
+
+            ViewBag.L1_15 = _context.Teams.OrderByDescending(Y => Y.TeamName).ToList();
+
+            ViewBag.L1_18 = _context.Players.Where(Y => Y.LastName.Contains("Cooper")).Where(Z => Z.FirstName != "Joshua").ToList();
+
+                   ViewBag.L1_19 = _context.Players.ToList().Where(x => x.FirstName == "Alexander" || x.FirstName == "Wyatt");
 
             return View();
         }
