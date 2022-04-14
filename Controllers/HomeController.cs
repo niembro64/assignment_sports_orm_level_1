@@ -31,9 +31,22 @@ namespace SportsORM.Controllers
         [HttpGet("level_1")]
         public IActionResult Level1()
         {
-            ViewBag.WomensLeagues = _context.Leagues
-                .Where(l => l.Sport.Contains("Women"))
+            ViewBag.X = _context.Leagues.OrderBy(Y => Y.Name).ToList();
+
+            ViewBag.Y = _context.Leagues.OrderByDescending(Y => Y.Name).ToList();
+
+            ViewBag.AllWomensLeagues = _context.Leagues
+                .Where(l => l.Name.Contains("Women"))
                 .ToList();
+
+            ViewBag.AllLeaguesWhereSportIsAnyTypeOfHockey = _context.Leagues
+                .Where(l => l.Name.Contains("Hockey"))
+                .ToList();
+
+            ViewBag.AllLeaguesWhereSportIsSomethingOtherThanFootball = _context.Leagues
+                .Where(l => l.Sport.Contains("Hockey"))
+                .ToList();
+
             return View();
         }
 

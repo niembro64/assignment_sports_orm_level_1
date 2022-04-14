@@ -3,15 +3,70 @@
     <div class="card-body">
         <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
         <ol>
+            <li>Y
+                <table class="table table-striped">
+                    <tr>
+                        <th>Y</th>
+                        <th>Y</th>
+                    </tr>
+                    @foreach (var l in ViewBag.Y)
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+                    }
+                </table>
+            </li>
+            <li>X
+                <table class="table table-striped">
+                    <tr>
+                        <th>X</th>
+                        <th>X</th>
+                    </tr>
+                    @foreach (var l in ViewBag.X)
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+                    }
+                </table>
+            </li>
             <li>...all womens' leagues
-
-
                 <table class="table table-striped">
                     <tr>
                         <th>League Name</th>
                         <th>League Sport</th>
                     </tr>
-                    @foreach (var l in ViewBag.WomensLeagues)
+                    @foreach (var l in ViewBag.AllWomensLeagues)
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+                    }
+                </table>
+            </li>
+            <li>...all leagues where sport is any type of hockey
+                <table class="table table-striped">
+                    <tr>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach (var l in ViewBag.AllLeaguesWhereSportIsAnyTypeOfHockey)
 
                     {
                         <tr>
@@ -21,12 +76,26 @@
 
                     }
                 </table>
-
-
-
             </li>
-            <li>...all leagues where sport is any type of hockey</li>
-            <li>...all leagues where sport is something OTHER THAN football</li>
+            <li>...all leagues where sport is something OTHER THAN football
+                                <table class="table table-striped">
+                    <tr>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach (var l in ViewBag.AllLeaguesWhereSportIsSomethingOtherThanFootball)
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+                    }
+                </table>
+            </li>
             <li>...all leagues that call themselves "conferences"</li>
             <li>...all leagues in the Atlantic region</li>
             <li>...all teams based in Dallas</li>
