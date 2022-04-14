@@ -1,3 +1,5 @@
+@* @model *@
+
 <div class="card">
     <div class="card-header bg-dark text-light">Level 1</div>
     <div class="card-body">
@@ -11,11 +13,197 @@
                     </tr>
                     @foreach (var l in ViewBag.Y)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     {
                         <tr>
                             <td>@l.Name</td>
                             <td>@l.Sport</td>
                         </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -30,11 +218,197 @@
                     </tr>
                     @foreach (var l in ViewBag.X)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     {
                         <tr>
                             <td>@l.Name</td>
                             <td>@l.Sport</td>
                         </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -49,11 +423,197 @@
                     </tr>
                     @foreach (var l in ViewBag.AllWomensLeagues)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     {
                         <tr>
                             <td>@l.Name</td>
                             <td>@l.Sport</td>
                         </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,23 +628,299 @@
                     </tr>
                     @foreach (var l in ViewBag.AllLeaguesWhereSportIsAnyTypeOfHockey)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     {
                         <tr>
                             <td>@l.Name</td>
                             <td>@l.Sport</td>
                         </tr>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     }
                 </table>
             </li>
             <li>...all leagues where sport is something OTHER THAN football
-                                <table class="table table-striped">
+                <table class="table table-striped">
                     <tr>
                         <th>League Name</th>
                         <th>League Sport</th>
                     </tr>
                     @foreach (var l in ViewBag.AllLeaguesWhereSportIsSomethingOtherThanFootball)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+                </table>
+            </li>
+            <li>...all leagues that call themselves "conferences"
+                <table class="table table-striped">
+                    <tr>
+                        <th>League Name</th>
+                        <th>League Sport</th>
+                    </tr>
+                    @foreach (var l in ViewBag.L1_6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+                </table>
+            </li>
+            <li>
+                <table class="table table-striped">
+                    <tr>
+
+                        <th>SelectLeagues</th>
+                    </tr>
+                    <tr>
+                        <td>@String.Join(", ",ViewBag.SelectLeagues)</td>
+
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table class="table table-striped">
+                    <tr>
+
+                        <th>BSports</th>
+                        <th>BSports</th>
+                    </tr>
+
+                    @foreach (var l in ViewBag.BSports)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {
+                        <tr>
+                            <td>@l.Name</td>
+                            <td>@l.Sport</td>
+                        </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    }
+                </table>
+            </li>
+            <li>...all leagues in the Atlantic region
+                <table class="table table-striped">
+                    <tr>
+
+                        <th>BSports</th>
+                        <th>BSports</th>
+                    </tr>
+
+                    @foreach (var l in ViewBag.L1_9)
+
+
                     {
                         <tr>
                             <td>@l.Name</td>
@@ -96,10 +932,52 @@
                     }
                 </table>
             </li>
-            <li>...all leagues that call themselves "conferences"</li>
-            <li>...all leagues in the Atlantic region</li>
-            <li>...all teams based in Dallas</li>
-            <li>...all teams named the Raptors</li>
+            <li>...all teams based in Dallas
+       <table class="table table-striped">
+                    <tr>
+
+                        <th>L1_10</th>
+                        <th>L1_10</th>
+                    </tr>
+
+                    @foreach (var l in ViewBag.L1_10)
+
+
+                    {
+                        <tr>
+                            <td>@l.TeamName</td>
+                            <td>@l.Location</td>
+                        </tr>
+
+
+
+                    }
+                </table>
+
+            </li>
+            <li>...all teams named the Raptors
+                       <table class="table table-striped">
+                    <tr>
+
+                        <th>L1_11</th>
+                        <th>L1_11</th>
+                    </tr>
+
+                    @foreach (var l in ViewBag.L1_11)
+
+
+                    {
+                        <tr>
+                            <td>@l.TeamName</td>
+                            <td>@l.Location</td>
+                        </tr>
+
+
+
+                    }
+                </table>
+
+            </li>
             <li>...all teams whose location includes "City"</li>
             <li>...all teams whose names begin with "T"</li>
             <li>...all teams, ordered alphabetically by location</li>

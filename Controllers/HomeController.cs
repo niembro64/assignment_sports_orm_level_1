@@ -44,8 +44,30 @@ namespace SportsORM.Controllers
                 .ToList();
 
             ViewBag.AllLeaguesWhereSportIsSomethingOtherThanFootball = _context.Leagues
-                .Where(l => l.Sport.Contains("Hockey"))
+                .Where(l => l.Sport != "Football")
                 .ToList();
+
+            ViewBag.L1_6 = _context.Leagues
+                .Where(l => l.Name.Contains("Conference"))
+                .ToList();
+
+            ViewBag.SelectLeagues = _context.Leagues.Select(g => g.Sport);
+
+            ViewBag.BSports = _context.Leagues.ToList().Where(x => x.Sport[0] == 'B');
+
+    
+            ViewBag.L1_9 = _context.Leagues
+                .Where(l => l.Name.Contains("Atlantic"))
+                .ToList();
+    
+            ViewBag.L1_10 = _context.Teams
+                .Where(l => l.Location.Contains("Dallas"))
+                .ToList();
+    
+            ViewBag.L1_11 = _context.Teams
+                .Where(l => l.TeamName.Contains("Raptors"))
+                .ToList();
+
 
             return View();
         }
